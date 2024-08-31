@@ -1,0 +1,173 @@
+:root {
+  --primary-color: #F7F7F7; /* light gray */
+  --secondary-color: #C9E4CA; /* pastel green */
+  --background-color: #F2F2F2; /* light gray */
+  --text-color: #333333; /* dark gray */
+  --link-color: #337AB7; /* blue */
+  --link-hover-color: #23527C; /* darker blue */
+  --accent-color: #8BC34A; /* pastel green */
+  --footer-color: #333333; /* dark gray */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, span, li, a{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* navbar */
+header {
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  padding: 0 15px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.nav-ul {
+  background-color: transparent;
+  display: flex;
+  padding: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul.nav-ul.scrolled {
+  background-color: rgba(200, 196, 196, 0.1);
+  backdrop-filter: blur(90px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--link-color);
+}
+
+li.nav-li {
+  font-size: 18px;
+  display: flex;
+  margin: 0 15px;
+  padding: 2px;
+  border-radius: 30px;
+}
+
+li.nav-li:hover {
+  background-color: #F2F2F2;
+  transition: all 0.2s linear;
+}
+
+.nav-link{
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* hero section */
+.hero-section{
+  margin: 180px 0 68px 0;
+  text-align: center;
+}
+
+.hero-section h2,
+.hero-section h4 {
+  padding: 10px 0;
+}
+
+.hero-section p {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.hero-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.hero-button button{
+  padding: 10px 23px;
+  border-radius: 50px;
+}
+
+.hero-section img {
+  border: 2px solid none; /* Use a solid border for a cleaner look */
+  border-radius: 15px; /* Increase the border radius for a softer edge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth transitions */
+}
+
+.hero-section img:hover {
+  transform: scale(1.05); /* Make the image slightly bigger on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  li.nav-li {
+    font-size: 18px;
+    margin: 0 12px;
+    padding: 2px 8px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  li.nav-li {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 2px 6px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .hero-section{
+    margin: 100px 0 68px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  li.nav-li {
+    font-size: 18px;
+    margin: 0 8px;
+    padding: 2px 5px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  nav {
+    font-size: 15px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  ul.nav-ul {
+    padding: 5px;
+  }
+
+  li.nav-li {
+    margin: 0 5px;
+    padding: 2px 3px;
+  }
+}
