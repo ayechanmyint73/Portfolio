@@ -4,8 +4,8 @@
   --background-color: #062d22;
   --text-color: #FFF;
   --nav-text-color: rgb(180, 179, 179);
-  --link-color: #337AB7;
-  --link-hover-color: #23527C;
+  --link-color: #0056b3;
+  --link-hover-color: #003366;
   --button-color: #e7a941;
   --button-hover-color: #eba222;
   --accent-color: #8BC34A;
@@ -160,6 +160,8 @@ html .nav-link:hover {
   padding: 15px 23px;
   border-radius: 50px;
   font-size: 1rem; 
+  min-width: 48px;    
+  min-height: 48px;
   flex-shrink: 0;
   background-color: var(--button-color);
   border: none;
@@ -200,7 +202,7 @@ html .nav-link:hover {
 
 .custom-card {
   margin: 20px 0;
-  background-color: #f8f9fa;
+  background-color: var(--text-color);
   border-radius: 20px;
   padding: 30px;
   display: flex;
@@ -209,11 +211,11 @@ html .nav-link:hover {
 }
 
 .custom-card p{
-  color: var(--footer-color);
+  color: black;
   text-align: justify;
 }
 
-.custom-card h4{
+.custom-card h2, h4{
   color: var(--background-color);
 }
 
@@ -250,7 +252,7 @@ html .nav-link:hover {
 }
 
 .card-text {
-  color: var(--footer-color); 
+  color: black; 
   text-align: justify;
 }
 
@@ -261,6 +263,7 @@ html .nav-link:hover {
 .card a:hover{
   color: var(--link-hover-color);
 }
+
 /* about section */
 .about-section {
   padding: 80px 15px 5px 15px;
@@ -385,7 +388,7 @@ html .nav-link:hover {
 }
 
 .info-detail {
-  color: var(--text-color);
+  color: black;
 }
 
 /* svg curved on education & personal information section */
