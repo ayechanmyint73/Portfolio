@@ -1,12 +1,13 @@
+// navbar scroll function
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector("ul.nav-ul");
 
     if (navbar) {
         window.addEventListener("scroll", function () {
             if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
+                navbar.classList.add("scrolled", "navbar-bounce");
             } else {
-                navbar.classList.remove("scrolled");
+                navbar.classList.remove("scrolled", "navbar-bounce");
             }
         });
     }

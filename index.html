@@ -1,74 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aye Chan Myint's Portfolio</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- bootstrap 5 link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header id="navbar">
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-li">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-li">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-li">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- navbar -->
-  <header id="navbar">
-    <nav>
-      <ul class="nav-ul">
-        <li class="nav-li">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-li">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-li">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-li">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- hero section -->
-  <section class="hero-section fade-in" id="home">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 order-2 order-md-1 text-container">
-          <h2>Hi, I'm Aye Chan Myint.</h2>
-          <h4>A Passinate Full-Stack Developer.</h4>
-          <p>
-            I specialize in crafting dynamic and responsive websites that blend creativity with functionality. 
-            With two years of experience in both frontend and backend development, I'm driven by a love for problem-solving 
-            and a commitment to delivering high-quality web solutions. <br><br>
-            I'm always exploring new technologies and honing my skills to stay ahead in the fast-evolving web landscape. 
-          </p>
-          <div class="hero-button">
-            <button>View Resume</button>
-            <button>View Video Introduction</button>
+    <!-- hero section -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-1 text-container">
+            <h1>Hi, I'm Aye Chan Myint.</h1>
+            <h3>A Passinate Full-Stack Developer.</h3>
+            <p>
+              I build responsive websites that blend creativity with functionality. I'm a lifelong learner, always embracing new skills for personal and professional growth.
+            </p>
+            <div class="hero-button">
+              <button><a href="">View Resume</a></button>
+              <button><a href="">View Video Introduction</a></button>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 order-1 order-md-2">
-          <img
-            src="./images/profile-img.jpg"
-            alt="profile image"
-            class="img-fluid" width=300 height="300" 
-          />
+          <div class="col-md-6 order-1 order-md-2">
+            <img
+              src="./images/profile-img.jpg"
+              alt="profile image"
+              class="img-fluid"
+            />
+          </div>
+
         </div>
       </div>
-    </div>
-  </section>
-    
-  <script src="./js/script.js"></script>
-</body>
+    </section>
 
+    
+
+    <!-- about section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="row">
+          <div class="col-md-6 text-col">
+            <p>
+              Over the past two years, I embarked on my web development journey at Lithan Academy Singapore, where I learned both frontend and backend technologies. <br><br>
+              During the time, I have built various projects, including food delivery project, a used car sales application, martial arts gym website and several mini-projects utilizing different technologies. <br><br>
+              Through these experiences, I've developed a passion for solving complex problems and transforming ideas into functional and aesthetically pleasing websites. <br><br>
+              Currently, I am focused on deepening my knowledge of PHP and Laravel, embracing new challenges to further enhance my skills. <br><br>
+              As an enthusiastic learner, I am committed to continuously growing in my web development journey, turning ideas into reality with innovative and user-friendly web solutions.
+            </p>
+          </div>
+          <div class="col-md-6 image-col">
+            <img
+              src="./images/profile-img.jpg"
+              alt="Profile image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- javascript section -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
