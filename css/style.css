@@ -764,15 +764,9 @@ html .footer-icons ul {
     padding: 5px;
   }
 
-  li.nav-li {
-    font-size: 0.55rem;
+  html li.nav-li {
+    font-size: 13px;
     margin: 0 5px;
-    padding: 2px 3px;
-  }
-
-  li.nav-li {
-    font-size: 14px;
-    margin: 0 4px;
     padding: 2px 3px;
   }
 
@@ -819,6 +813,15 @@ html .footer-icons ul {
     border-radius: 30px;
   }
 
+  html li.nav-li {
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 2px 3px;
+  }
+
+  html .nav-link {
+    font-size: 12px;
+  }
 
   .hero-section {
     padding: 60px 0 50px 0;
