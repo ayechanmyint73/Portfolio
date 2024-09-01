@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #FFF;
+  --primary-color: #e7a941;
   --secondary-color: #bde391;
   --background-color: #062d22;
   --text-color: #FFF;
-  --link-color: rgb(180, 179, 179);
+  --nav-text-color: rgb(180, 179, 179);
+  --link-color: #337AB7;
   --link-hover-color: #23527C;
   --button-color: #e7a941;
   --button-hover-color: #eba222;
@@ -19,6 +20,7 @@
 
 html body {
   background-color: var(--background-color);
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,13 +90,7 @@ li.nav-li {
 html .nav-link {
   font-size: 1.1rem;
   text-decoration: none;
-  color: var(--link-color);
-}
-
-html .nav-link {
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: var(--link-color);
+  color: var(--nav-text-color);
 }
 
 html .nav-link.active{
@@ -236,6 +232,86 @@ html .nav-link:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* education section */
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-icon {
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color); 
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.timeline-content {
+  padding-left: 30px;
+}
+
+.timeline-content h2 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--text-color); 
+}
+
+.timeline-content h3 {
+  margin: 5px 0;
+  font-size: 1.05em;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 0.97em;
+  color: var(--secondary-color); 
+}
+
+/* personal information */
+.personal-info-section {
+  margin: 30px 20px;
+}
+
+.personal-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.personal-info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-label {
+  font-weight: bold;
+  width: 120px; 
+  color: var(--secondary-color);
+}
+
+.info-detail {
+  color: var(--text-color);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   li.nav-li {
@@ -320,6 +396,15 @@ html .nav-link:hover {
   .image-col img {
     max-width: 300px;
   }
+
+  /* personal information section */
+  .personal-info-section {
+    padding: 20px 5px;
+  }
+
+  .info-label {
+    width: 89px; 
+  }
 }
 
 @media (max-width: 576px) {
@@ -356,6 +441,8 @@ html .nav-link:hover {
     flex-direction: column; 
     gap: 10px; 
     margin: 20px 0;
+    align-items: center;
+    justify-content: center; 
   }
   
   .hero-button button {
