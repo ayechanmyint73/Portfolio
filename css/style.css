@@ -165,6 +165,7 @@ html .nav-link:hover {
   flex-shrink: 0;
   background-color: var(--button-color);
   border: none;
+  color: var(--footer-color);
 }
 
 .hero-button button:hover{
@@ -390,25 +391,19 @@ html .progress-per {
   color: var(--primary-color);
 }
 
-.text-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-col p {
+.about-text p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.image-col {
+.about-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image-col img {
+.about-img img {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -553,12 +548,13 @@ label {
 
 .btn-send {
   width: 100%;
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  padding: 15px 23px;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
   background-color: var(--button-color);
   color: var(--footer-color);
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -718,8 +714,8 @@ html .footer-icons ul {
     padding: 2px 5px;
   }
 
-  .hero-section {
-    padding: 70px 0;
+  html .hero-section {
+    padding: 100px 0 80px 0;
   }
 
   .about-section {
@@ -731,12 +727,13 @@ html .footer-icons ul {
     text-align: center;
   }
 
-  .text-col {
+  .about-text {
     margin-top: 20px;
   }
 
-  .image-col img {
+  .about-img img {
     max-width: 300px;
+    margin-bottom: 15px;
   }
 
   /* personal information section */
@@ -765,18 +762,19 @@ html .footer-icons ul {
   }
 
   html li.nav-li {
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 5px;
     padding: 2px 3px;
   }
 
   html .nav-link {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .hero-section p {
     font-size: 1rem;
     line-height: 1.5rem;
+    text-align: center;
   }
 
   .hero-button {
@@ -785,6 +783,7 @@ html .footer-icons ul {
 
   .hero-section img {
     max-width: 200px;
+    margin-bottom: 20px;
   }
 
   .hero-button {
@@ -866,7 +865,7 @@ html .footer-icons ul {
     font-size: 16px;
   }
 
-  .image-col img {
+  .about-img img {
     max-width: 250px;
   }
 }
