@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aye Chan Myint's Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/png">
 
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -67,7 +68,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 order-2 order-md-1 text-container">
-            <h1>Hi, I'm AYE CHAN MYINT.</h1>
+            <h1>Hi, I'm <strong>AYE CHAN MYINT.</strong></h1>
             <h3>A Passionate Full-Stack Developer.</h3>
             <p>
               I build responsive websites that blend creativity with functionality. 
@@ -470,25 +471,36 @@
       <div class="container">
         <h1>Contact</h1>
         <h5>Thanks for your interest in getting in touch with me!</h5>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <div class="row">
+          <div class="col-md-5 contact-info">
+            <ul class="info-list">
+              <li><i class="fas fa-phone"></i> +95 995 169 3219</li>
+              <li><i class="fas fa-envelope"></i> ayechan.tgo2020tgo@gmail.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Taungoo, Myanmar</li>
+            </ul>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <div class="col-md-7">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <div id="formMessage" class="form-message"></div>
+              <button type="submit">Send <i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" name="message" placeholder="Your Message" required></textarea>
-          </div>
-          <div id="formMessage" class="form-message"></div>
-          <button type="submit">Send <i class="fa fa-location-arrow" aria-hidden="true"></i>    </button>
-          
-        </form>
+        </div>
       </div>
     </section>
+    
     
     
 
