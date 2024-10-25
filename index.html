@@ -66,7 +66,7 @@
     <section class="hero-section" id="home">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 order-2 order-md-1 text-container">
+          <div class="col-md-6 col-sm-6 order-2 order-md-1 text-container">
             <h1>Hi, I'm AYE CHAN MYINT.</h1>
             <h3>A Passionate Full-Stack Developer.</h3>
             <p>
@@ -74,11 +74,11 @@
               I'm a lifelong learner, always embracing new skills for personal and professional growth.
             </p>
             <div class="hero-button">
-              <a href="https://drive.google.com/file/d/1rI6Nw_XjunaMx3PkhV31sO5kSbTess8K/view?usp=sharing" target="_blank"><button>View Resume</button></a>
-              <a href=""><button>View Video Introduction</button></a>
+              <a href="https://drive.google.com/file/d/1rI6Nw_XjunaMx3PkhV31sO5kSbTess8K/view?usp=sharing" target="_blank"><button>View Resume<i class="fas fa-file-alt"></i></button></a>
+              <a href=""><button>View Video Introduction<i class="fas fa-video-camera"></i></button></a>
             </div>
           </div>
-          <div class="pop-up-animation col-md-6 order-1 order-md-2">
+          <div class="pop-up-animation col-md-6 col-sm-6 order-1 order-md-2">
             <img
               src="./images/profile-img.jpg"
               alt="profile image"
@@ -88,6 +88,8 @@
         </div>
       </div>
     </section>
+    
+    
 
     <!-- projects section -->
     <section class="projects-section " id="projects">
@@ -95,10 +97,21 @@
         <h1>Projects I've Built</h1>
 
         <!-- meals on wheels -->
-        <div class="custom-card shadow-lg p-4">
+        <div class="projects">
           <div class="row">
-            <div class="col-md-6">
-              <h2 class="mb-3">Meals On Wheels</h2>
+            <div class="col-md-7">
+              <div class="project-images">
+                <img src="./images/merrymeal_cover.png" class="project-image img-fluid" alt="Meals On Wheels image">
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="project-header">
+                <div class="project-number">
+                    <span class="line"></span> 01 / 06
+                </div>
+                <h2 class="mb-3 project-title">Meals On Wheels</h2>
+              </div>
               <p class="mb-4">
                 This Meals on Wheels project is for the MerryMeal organization, which delivers meals to adults who are unable to cook due to age,
                 illness, or disability. The system allows members to order meals, track delivery in real-time, and view updates. 
@@ -107,23 +120,30 @@
               <h4>Technologies</h4>
               <p>Bootstrap, JavaScript, PHP, Laravel, MySQL</p>
 
-              <h4>Source Code</h4>
+              <h4>GitHub</h4>
               <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/Meals_On_Wheels_Project"target="_blank">https://Meals_on_Wheels</a>
             </div>
 
-            <div class="col-md-6">
-              <div class="project-images">
-                <img src="./images/merrymeal_cover.png" class="project-image img-fluid" alt="Meals On Wheels image">
-              </div>
-            </div>
           </div>
         </div>
 
         <!-- Car Sale Portal  -->
-        <div class="custom-card  shadow-lg p-4">
+        <div class="projects">
           <div class="row">
-            <div class="col-md-6">
-              <h2 class="mb-3">AutoGem Car Sale Portal</h2>
+            <!-- Image first on small screens -->
+            <div class="col-md-7 order-1 order-md-2">
+              <div class="project-images">
+                <img src="./images/car_portal_cover.png" class="project-image img-fluid" alt="Autogem car sale portal">
+              </div>
+            </div>
+
+            <div class="col-md-5 order-2 order-md-1">
+              <div class="project-header">
+                <div class="project-number">
+                    <span class="line"></span> 02 / 06
+                </div>
+                <h2 class="mb-3 project-title">AutoGem Car Sale Portal</h2>
+              </div>
               <p class="mb-4">
                 The AutoGem Car Sale Portal allows users to buy and sell cars online. 
                 Users can register, log in, post cars for sale, update their profiles, and bid on cars. 
@@ -132,23 +152,29 @@
               <h4>Technologies</h4>
               <p>Bootstrap, SpringBoot, Spring Security, MySQL</p>
 
-              <h4>Source Code</h4>
+              <h4>GitHub</h4>
               <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/AutoGem_Cars_Portal" target="_blank">https://AutoGem_Car_Sale_Portal</a>
-            </div>
-
-            <div class="col-md-6">
-              <div class="project-images">
-                <img src="./images/car_portal_cover.png" class="project-image img-fluid" alt="Autogem car sale portal">
-              </div>
             </div>
           </div>
         </div>
 
+
         <!-- Portfolio  -->
-        <div class=" custom-card shadow-lg p-4">
+        <div class="projects">
           <div class="row">
-            <div class="col-md-6">
-              <h2 class="mb-3">Portfolio Website</h2>
+            <div class="col-md-7">
+              <div class="project-images">
+                <img src="./images/portfolio_cover.png" class="project-image img-fluid" alt="Portfolio image">
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="project-header">
+                <div class="project-number">
+                    <span class="line"></span> 03 / 06
+                </div>
+                <h2 class="mb-3 project-title">Portfolio Website</h2>
+              </div>
               <p class="mb-4">
                 This personal portfolio showcases my skills, education, and the technologies and frameworks I've learned. 
                 It includes four main sections: Home, Projects, About, and Contact. Developed using HTML, CSS, JavaScript, 
@@ -157,15 +183,11 @@
               <h4>Technologies</h4>
               <p>HTML, CSS, JavaScript, Bootstrap, EmailJS</p>
 
-              <h4>Source Code</h4>
+              <h4>GitHub</h4>
               <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/Portfolio" target="_blank">https://Portfolio</a>
             </div>
 
-            <div class="col-md-6">
-              <div class="project-images">
-                <img src="./images/portfolio_cover.png" class="project-image img-fluid" alt="Portfolio image">
-              </div>
-            </div>
+            
           </div>
         </div>
 
@@ -174,17 +196,22 @@
         <div class="row justify-content-center">
           <!-- DoBu Martial Arts -->
           <div class="fade-in-animation col-md-4 mb-4">
-            <div class="card border-0">
+            <div class="card border-0 shadow-lg mini-cards">
               <img src="./images/dobu_cover.png" class="card-img-top rounded-4" alt="DoBu Martial Arts image">
               <div class="card-body">
-                <h4 class="card-title fw-bold">DoBu Martial Arts</h4>
-                <p class="card-text text-secondary">
+                <div class="project-header">
+                  <div class="project-number">
+                      <span class="line"></span> 04 / 06
+                  </div>
+                  <h4 class="mb-3 card-title">DoBu Martial Arts</h4>
+                </div>
+                <p class="card-text">
                   The DoBu Martial Arts website is designed for a local martial arts gym offering various classes. 
-                  Built with HTML, CSS, and Bootstrap 5, it provides a user-friendly interface and easy navigation to explore features and functionalities.
+                  It provides a user-friendly interface and easy navigation to explore features and functionalities.
                 </p>
                 <h5 class="card-title">Technologies</h5>
                 <p class="card-text">HTML, CSS, Bootstrap</p>
-                <h5 class="card-title">Source Code</h5>
+                <h5 class="card-title">GitHub</h5>
                 <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/DoBu_Martial_Arts_Project" target="_blank">https://DoBu_Martial_Arts</a>
               </div>
             </div>
@@ -192,18 +219,23 @@
 
           <!-- CinFlix Movie Channel -->
           <div class=" fade-in-animation col-md-4 mb-4">
-            <div class="card border-0">
+            <div class="card border-0 shadow-lg mini-cards">
               <img src="./images/movie_channel_cover.png" class="card-img-top rounded-4" alt="CinFlix Movie Channel image">
               <div class="card-body">
-                <h4 class="card-title fw-bold">CinFlix Movie Channel</h4>
-                <p class="card-text text-secondary">
+                <div class="project-header">
+                  <div class="project-number">
+                      <span class="line"></span> 05 / 06
+                  </div>
+                  <h4 class="mb-3 card-title">CinFlix Movie Channel</h4>
+                </div>
+                <p class="card-text ">
                   CineFlix is a mini project developed using pure HTML and CSS. 
                   It features streaming, popular movies, and upcoming movies sections. 
                   For easy navigation, each movie's duration and genre are displayed.
                 </p>
                 <h5 class="card-title">Technologies</h5>
                 <p class="card-text">HTML, CSS</p>
-                <h5 class="card-title">Source Code</h5>
+                <h5 class="card-title">GitHub</h5>
                 <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/Movie_Channel" target="_blank">https://CinFlix_Movie_Channel</a>
               </div>
             </div>
@@ -211,18 +243,23 @@
 
           <!-- PHP Blogs -->
           <div class="fade-in-animation col-md-4 mb-4">
-            <div class="card border-0">
+            <div class="card border-0 shadow-lg mini-cards">
               <img src="./images/blogs_cover.png" class="card-img-top rounded-4" alt="PHP Blogs image">
               <div class="card-body">
-                <h4 class="card-title fw-bold">PHP Blogs</h4>
-                <p class="card-text text-secondary">
+                <div class="project-header">
+                  <div class="project-number">
+                      <span class="line"></span> 06 / 06
+                  </div>
+                  <h4 class="mb-3 card-title">PHP Blogs</h4>
+                </div>
+                <p class="card-text">
                   This blog project
                   allows users to manage blog posts and categories. Users can add, update, or delete categories and posts, 
-                  and preview images for better understanding. Detailed views and post management features are included.
+                  and preview images for better understanding.
                 </p>
                 <h5 class="card-title">Technologies</h5>
                 <p class="card-text">Bootstrap, PHP, MySQL</p>
-                <h5 class="card-title">Source Code</h5>
+                <h5 class="card-title">GitHub</h5>
                 <i class="fab fa-github"></i><a href="https://github.com/ayechanmyint73/php_blogs_mini_project" target="_blank">https://PHP_Blogs</a>
               </div>
             </div>
@@ -231,189 +268,122 @@
       </div>
     </section>
 
-    <!-- skills section -->
-    <section class="skills-section" id="skills">
-      <div class="container">
-        <!-- technical skills -->
-        <h1>Technical Skills</h1>
-        <div class="row">
-          <!-- front end technologies -->
-          <div class="col-md-6">
-            <div class="skills-group" aria-labelledby="frontend-skills">
-              <h4 id="frontend-skills"><i class="fa-solid fa-code"></i> Front-End Technologies</h4>
-              <!-- html -->
-              <div class="skill" aria-label="HTML skill proficiency">
-                <i class="fa-brands fa-html5" aria-hidden="true"></i>
-                <span>HTML</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 90%"></div>
-                </div>
-                <span class="percentage">90%</span>
-              </div>
-        
-              <!-- css -->
-              <div class="skill" aria-label="CSS skill proficiency">
-                <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
-                <span>CSS</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 70%"></div>
-                </div>
-                <span class="percentage">70%</span>
-              </div>
-        
-              <!-- JavaScript -->
-              <div class="skill" aria-label="JavaScript skill proficiency">
-                <i class="fa-brands fa-js" aria-hidden="true"></i>
-                <span>JavaScript</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 60%"></div>
-                </div>
-                <span class="percentage">60%</span>
-              </div>
-        
-              <!-- Bootstrap -->
-              <div class="skill" aria-label="Bootstrap skill proficiency">
-                <i class="fa-brands fa-bootstrap" aria-hidden="true"></i>
-                <span>Bootstrap</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 80%"></div>
-                </div>
-                <span class="percentage">80%</span>
-              </div>
-            </div>
-          </div>
-        
-          <!-- backend technologies -->
-          <div class="col-md-6">
-            <div class="skills-group" aria-labelledby="backend-skills">
-              <h4 id="backend-skills"><i class="fa-solid fa-database"></i> Back-End Technologies</h4>
-              <!-- MySQL -->
-              <div class="skill" aria-label="MySQL skill proficiency">
-                <i class="fa-solid fa-database" aria-hidden="true"></i>
-                <span>MySQL</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 80%"></div>
-                </div>
-                <span class="percentage">80%</span>
-              </div>
-        
-              <!-- Java -->
-              <div class="skill" aria-label="Java skill proficiency">
-                <i class="fa-brands fa-java" aria-hidden="true"></i>
-                <span>Java</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 65%"></div>
-                </div>
-                <span class="percentage">65%</span>
-              </div>
-        
-              <!-- Spring Boot -->
-              <div class="skill" aria-label="Spring Boot skill proficiency">
-                <i class="fa-solid fa-gear" aria-hidden="true"></i>
-                <span>Spring Boot</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 50%"></div>
-                </div>
-                <span class="percentage">50%</span>
-              </div>
-        
-              <!-- Spring MVC -->
-              <div class="skill" aria-label="Spring MVC skill proficiency">
-                <i class="fa-solid fa-leaf" aria-hidden="true"></i>
-                <span>Spring MVC</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 55%"></div>
-                </div>
-                <span class="percentage">55%</span>
-              </div>
-        
-              <!-- PHP -->
-              <div class="skill" aria-label="PHP skill proficiency">
-                <i class="fa-brands fa-php" aria-hidden="true"></i>
-                <span>PHP</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 45%"></div>
-                </div>
-                <span class="percentage">45%</span>
-              </div>
-        
-              <!-- Laravel -->
-              <div class="skill" aria-label="Laravel skill proficiency">
-                <i class="fa-brands fa-laravel" aria-hidden="true"></i>
-                <span>Laravel</span>
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-per" style="width: 50%"></div>
-                </div>
-                <span class="percentage">50%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-
-        <!-- soft skills -->
-        <div class="skill-cards-container fade-in-bottom">
-          <h2>Soft Skills</h2>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="skill-card">
-                <i class="fas fa-users"></i>
-                <h4>Teamwork</h4>
-                <p>
-                  Collaborated effectively with team to deliver the projects on time.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="skill-card">
-                <i class="fas fa-puzzle-piece"></i>
-                <h4>Problem-Solving</h4>
-                <p>Ability to identify, analyze, and resolve issues efficiently.</p>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="skill-card">
-                <i class="fas fa-comments"></i>
-                <h4>Communication</h4>
-                <p>
-                  Excellent written communication skills by the effective exchange of
-                  ideas.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="skill-card">
-                <i class="fas fa-lightbulb"></i>
-                <h4>Creativity</h4>
-                <p>Innovative thinker with a passion for solving complex problems.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
+    <!-- technical skills -->
+    <section class="skills-grid-section">
+      <h1>Technical Skills</h1>
+    
+      <!-- Buttons for collapsing sections -->
+      <div class="skills-nav">
+        <button class="skills-btn active" data-target="backend">Back-end</button>
+        <button class="skills-btn" data-target="frontend">Front-end</button>
+        <button class="skills-btn" data-target="tools">Other Tools</button>
       </div>
 
+      <!-- Backend Skills -->
+      <div class="skills-category" id="backend">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./icons/php-color.svg" alt="php logo">
+            <h4>PHP</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/laravel-color.svg" alt="laravel logo">
+            <h4>Laravel</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/springboot-color.svg" alt="spring boot logo">
+            <h4>Spring Boot</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/spring-color.svg" alt="spring mvc logo">
+            <h4>Spring MVC</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/mysql-color.svg" alt="database logo">
+            <h4>MySQL</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend Skills -->
+      <div class="skills-category" id="frontend" style="display: none;">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./icons/html5-color.svg" alt="html logo">
+            <h4>HTML</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/css3-color.svg" alt="css logo">
+            <h4>CSS</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/javascript-color.svg" alt="javascript logo">
+            <h4>JavaScript</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/bootstrap-color.svg" alt="bootstrap logo">
+            <h4>Bootstrap</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Tools Skills -->
+      <div class="skills-category" id="tools" style="display: none;">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="./icons/power-bi-icon.svg" alt="hubspot logo">
+            <h4>Power BI</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/PowerAutomate_scalable.svg" alt="hubspot logo">
+            <h4>Power Automate</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/CopilotStudio_scalable.svg" alt="hubspot logo">
+            <h4>Copilot Studio</h4>
+          </div>
+          <div class="skill-card">
+            <img src="./icons/hubspot-color.svg" alt="hubspot logo">
+            <h4>Hubspot</h4>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
+    <!-- soft skills -->
+    <section class="soft-skills-section">
+      <div class="container">
+        <h2>Soft Skills</h2>
+        <div class="soft-skills-grid">
+          <div class="skill-item">Communication</div>
+          <div class="skill-item">Time Management</div>
+          <div class="skill-item">Problem Solving</div>
+          <div class="skill-item">Teamwork</div>
+          <div class="skill-item">Adaptability</div>
+          <div class="skill-item">Creativity</div>
+        </div>
+      </div>
+    </section>    
 
     <!-- about section -->
     <section class="about-section fade-in-animation" id="about">
       <div class="container">
         <h1>About Me</h1>
         <div class="row">
-          <div class="col-md-6 about-text" >
+          <!-- Left Column: About Text -->
+          <div class="col-md-6 about-text">
             <p>
               Over the past two years, I embarked on my web development journey at Lithan Academy Singapore, where I learned both frontend and backend technologies. <br><br>
-              During the time, I have built various projects, including food delivery project, a used car sales application, martial arts gym website and several mini-projects utilizing different technologies. <br><br>
+              During the time, I have built various projects, including a food delivery project, a used car sales application, a martial arts gym website, and several mini-projects utilizing different technologies. <br><br>
               Through these experiences, I've developed a passion for solving complex problems and transforming ideas into functional and aesthetically pleasing websites. <br><br>
               Currently, I am focused on deepening my knowledge of PHP and Laravel, embracing new challenges to further enhance my skills. <br><br>
               As an enthusiastic learner, I am committed to continuously growing in my web development journey, turning ideas into reality with innovative and user-friendly web solutions.
-            </p>
+            </p> 
+
+            
           </div>
+    
+          <!-- Right Column: Personal Information and Video -->
           <div class="col-md-6 about-img" >
             <img
               src="./images/profile-img.jpg"
@@ -421,91 +391,78 @@
               class="img-fluid"
             />
           </div>
+
+          <!-- <section class="personal-info-section" id="personal-info">
+            <ul class="personal-info-list">
+              <div class="row">
+                <div class="col-sm-6">
+                  <li><span class="info-label">Age:</span> <span class="info-detail">20</span></li>
+                  <li><span class="info-label">Language:</span> <span class="info-detail">Burmese, English</span></li>
+                </div>
+                <div class="col-sm-6">
+                  <li><span class="info-label">Phone:</span> <span class="info-detail">+95 995 169 3219</span></li>
+                  <li><span class="info-label">Location:</span> <span class="info-detail">Taungoo, Myanmar</span></li>
+                </div>
+              </div>
+
+              <li><span class="info-label">Email:</span> <span class="info-detail">ayechan.tgo2020tgo@gmail.com</span></li>
+            </ul>
+          </section> -->
         </div>
       </div>
     </section>
+    
 
-    <!-- education section & personal information -->
-    <section class="education-section" id="education">
-      <div class="curved upper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-          <path fill="#8BC34A" fill-opacity="1" 
-          d="M0,160L80,154.7C160,149,320,139,480,149.3C640,160,800,192,960,197.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-          </path>
-        </svg>
-      </div>
-      <section class="curved">
-        <div class="container">
-          <div class="row">
-            <!-- Education section -->
-            <div class="col-md-6">
-              <h2>Education</h2>
-              <section class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-icon"></div>
-                  <div class="timeline-content">
-                    <h2>2018 - 2020</h2>
-                    <h3>Family Private High School</h3>
-                    <p>Grade 9/ Grade 10</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-icon"></div>
-                  <div class="timeline-content">
-                    <h2>2022 - 2023</h2>
-                    <h3>Lithan Academy Singapore</h3>
-                    <p>Pearson BTEC International Level 3 Foundation Diploma (MERIT)</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-icon"></div>
-                  <div class="timeline-content">
-                    <h2>2023 - 2024</h2>
-                    <h3>Lithan Academy Singapore</h3>
-                    <p>Higher National Diploma in Software Engineering</p>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <!-- personal information section -->
-            <div class="col-md-6">
-              <h2>Personal Information</h2>
-              <section class="personal-info-section" id="personal-info">
-                <ul class="personal-info-list">
-                  <li>
-                    <span class="info-label">Age:</span>
-                    <span class="info-detail">20</span>
-                  </li>
-                  <li>
-                    <span class="info-label">Language:</span>
-                    <span class="info-detail">Burmese, English</span>
-                  </li>
-                  <li>
-                    <span class="info-label">Email:</span>
-                    <span class="info-detail">ayechan.tgo2020tgo@gmail.com</span>
-                  </li>
-                  <li>
-                    <span class="info-label">Phone:</span>
-                    <span class="info-detail">+95 995 169 3219</span>
-                  </li>
-                  <li>
-                    <span class="info-label">Location:</span>
-                    <span class="info-detail">Taungoo, Myanmar</span>
-                  </li>
-                </ul>
-              </section>
-              
-            </div>
+    <!-- education section -->
+    <section class="education-section">
+      <div class="container">
+        <h1>Education</h1>
+      
+        <div class="education-item">
+          <h3 class="education-date">
+            2023 - Current
+          </h3>
+          <div class="circle-line">
+            <div class="circle"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="education-content">
+            <h3>Lithan Academy Singapore</h3>
+            <span class="education-institute">Higher National Diploma in Software Engineering</span>
+            <span class="education-location"><i class="fas fa-location-dot"></i>Singapore</span>            
           </div>
         </div>
-      
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-          <path fill="#062d22" fill-opacity="1" 
-          d="M0,160L40,176C80,192,160,224,240,218.7C320,213,400,171,480,160C560,149,640,171,720,176C800,181,880,171,960,176C1040,181,1120,203,1200,208C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-          </path>
-        </svg>
-      </section>
+    
+        <div class="education-item">
+          <h3 class="education-date">
+            2022 - 2023
+          </h3>
+          <div class="circle-line">
+            <div class="circle"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="education-content">
+            <h3>Lithan Academy Singapore</h3>
+            <span class="education-institute">Pearson BTEC International Level 3 Foundation Diploma</span>
+            <span class="education-location"><i class="fas fa-location-dot"></i>Singapore</span>            
+          </div>
+        </div>
+    
+        <div class="education-item">
+          <h3 class="education-date">
+            2018 - 2020
+          </h3>
+          <div class="circle-line">
+            <div class="circle"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="education-content">
+            <h3>Family Private High School</h3>
+            <span class="education-institute">Grade 9 + Grade 10</span>
+            <span class="education-location"><i class="fas fa-location-dot"></i>Myanmar</span>           
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- contact section -->
@@ -513,24 +470,26 @@
       <div class="container">
         <h1>Contact</h1>
         <h5>Thanks for your interest in getting in touch with me!</h5>
-        <form id="contactForm">
-          <div class="mb-3">
-              <label for="name" class="">Name</label>
-              <input type="text" class="form-field" id="name" name="name" placeholder="Please enter your name" required>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
           </div>
-          <div class="mb-3">
-              <label for="email" class="">Email</label>
-              <input type="email" class="form-field" id="email" name="email" placeholder="Please enter your email" required>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
           </div>
-          <div class="mb-3">
-              <label for="message" class="">Message</label>
-              <textarea class="form-field" id="message" name="message" rows="4" placeholder="Please enter your message" required></textarea>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" name="message" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn-send">Send</button>
-          <div id="formMessage" class="form-message"></div> 
-      </form>
+          <div id="formMessage" class="form-message"></div>
+          <button type="submit">Send <i class="fa fa-location-arrow" aria-hidden="true"></i>    </button>
+          
+        </form>
       </div>
     </section>
+    
     
 
     <!-- footer -->
